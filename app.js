@@ -13,7 +13,7 @@ function updateNumber(product, isIncreasing, price) {
   const tax = document.getElementById('tax-total');
   const grandTotal = document.getElementById('grand-total');
   subTotal.innerText = calculateTotal();
-  tax.innerText = calculateTotal() / 5;
+  tax.innerText = calculateTotal() / 10;
   grandTotal.innerText = parseFloat(subTotal.innerText) + parseFloat(tax.innerText);
 }
 
